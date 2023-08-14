@@ -2,8 +2,6 @@
 Author: mf2k@proton.me
 Date: 2023-08
 
-DISCLAIMER: this fail has been had written. All bash command are working as I've tested them
-
 */
 
 pipeline {

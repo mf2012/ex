@@ -10,12 +10,13 @@ You should:
 
 2. [x] Configure a Jenkins job to build the Docker image and push it to an AWS ECR repository.
 
-3. Write CloudFormation templates to create the required infrastructure (e.g. Elastic Beanstalk
+3. [x] Write CloudFormation templates to create the required infrastructure (e.g. Elastic Beanstalk
 instance, RDS instance, etc.).
 
-4. Configure Jenkins to deploy the Docker image to the Elastic Beanstalk instance using the
+4. [x] Configure Jenkins to deploy the Docker image to the Elastic Beanstalk instance using the
 CloudFormation templates.
 
+DISCLAIMER: My app is the simple hello world! nodejs app
 
 
 # Requirements
