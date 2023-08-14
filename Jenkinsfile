@@ -50,7 +50,7 @@ docker push \
             }        
         }
 
-        stage('Run test') {
+        stage('Run local test') {
             agent any
             steps {
                 sh """
@@ -74,11 +74,10 @@ docker push \
             agent any
             steps {
                 sh '''
-                # create S3 bucket 
                 #RAND6=$(cat /dev/urandom | head -c 6|base64|tr '[A-Z]' '[a-z]')
                 aws s3api create-bucket --bucket hello-node-eb-ymdhjp5n --region us-east-1
                 aws cp hello_node.zip s3://hello-node-eb-ymdhjp5n/hello_node.zip
-                # run beanstalk with template 
+                
                 aws cloudformation create-stack --stack-name hello-node --template-body file://ECS_beanstack_ECR.yaml
                 '''
             }

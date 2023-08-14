@@ -26,5 +26,12 @@ Additionally, jenkins user should be able to use worker node where it can instal
 - I've added also Jenkins Blue Ocean plugin for better representation of the pipeline
 - create Access key with access secret and configure your aws cli on the box.
 
+# Diagrams
+General process is captured in the Jenkinsfile but below is the graphical representation to make it easier to understand all steps.
+![ci_cd_view_blue_ocean](./picts/ci_cd_jenkins.png)
+
+Additional diagram to show general dependency
+![Jenkins_dev_AWS_dependency](./picts/CICD_process.drawio.png)
+
 # My comments
-- Personally, I prefer using Terraform for IaC as I've got much more time with the TF code and ease of use.
+- Personally, I prefer using Terraform for IaC but use of cloudfront templates is very convenient :D

@@ -1,0 +1,133 @@
+<mxfile host="app.diagrams.net" modified="2023-08-14T06:41:42.113Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/116.0" etag="__J0Hy3iG0XKr9z9QyZN" version="21.6.8" type="device">
+  <diagram name="Page-1" id="8qghi8MPYVagy2JK4OSz">
+    <mxGraphModel dx="936" dy="1043" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.145;entryY=0.855;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-13" target="d_hJynL5bnxD2IFa9UQ6-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="450" y="205" />
+              <mxPoint x="450" y="186" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-15" value="&lt;div&gt;Build container locally/&lt;/div&gt;&lt;div&gt;&amp;nbsp;publishes to ECR&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-14">
+          <mxGeometry x="0.0452" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-13" target="d_hJynL5bnxD2IFa9UQ6-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="339" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-24" value="pushes the zip file to bucket for cloud tront template" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-21">
+          <mxGeometry x="-0.0449" relative="1" as="geometry">
+            <mxPoint x="48" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-13" target="d_hJynL5bnxD2IFa9UQ6-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="487" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-26" value="Runs Cloud formation stack with data from the bucket" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-25">
+          <mxGeometry x="0.6646" relative="1" as="geometry">
+            <mxPoint x="-54" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-13" value="AWSCLI/docker&lt;br&gt;on dev laptop" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="190" y="100" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-1" target="d_hJynL5bnxD2IFa9UQ6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-1" value="git&lt;br&gt;repo" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="101" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="d_hJynL5bnxD2IFa9UQ6-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="160" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-9" value="Checks registry exists&lt;br&gt;or creates docker registry" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-8">
+          <mxGeometry x="0.0545" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-4" target="d_hJynL5bnxD2IFa9UQ6-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-4" value="Jenkinsfile&lt;br&gt;pipeline" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#3F8624;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.iot_analytics_pipeline;" vertex="1" parent="1">
+          <mxGeometry x="221" y="120" width="78" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-5" target="d_hJynL5bnxD2IFa9UQ6-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-34" value="app container" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-32">
+          <mxGeometry x="-0.5109" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-5" value="ECR" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ecr;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="124" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-7" target="d_hJynL5bnxD2IFa9UQ6-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-7" target="d_hJynL5bnxD2IFa9UQ6-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="486.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-31" value="deployment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-29">
+          <mxGeometry x="-0.1401" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-7" value="cloud formation" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cloudformation;fillColor=#759C3E;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="440" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.007;entryY=0.893;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-13" target="d_hJynL5bnxD2IFa9UQ6-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="295" y="260" />
+              <mxPoint x="480" y="260" />
+              <mxPoint x="480" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-17" value="Run local dcoker test" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-16">
+          <mxGeometry x="0.813" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-23" value="builds zip file with Dockerfile" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-16">
+          <mxGeometry x="-0.4807" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="d_hJynL5bnxD2IFa9UQ6-20" target="d_hJynL5bnxD2IFa9UQ6-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-35" value="dockerfile def" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d_hJynL5bnxD2IFa9UQ6-33">
+          <mxGeometry x="-0.5279" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-20" value="App bucket" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#3F8624;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.bucket;" vertex="1" parent="1">
+          <mxGeometry x="540" y="300" width="75" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hJynL5bnxD2IFa9UQ6-30" value="Beanstalk app" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.elastic_beanstalk;" vertex="1" parent="1">
+          <mxGeometry x="720" y="447.5" width="78" height="78" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
