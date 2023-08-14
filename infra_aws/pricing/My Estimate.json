@@ -1,0 +1,284 @@
+{
+	"Name": "My Estimate",
+	"Total Cost": {
+		"monthly": "707.63",
+		"upfront": "402.96",
+		"12 months": "8894.52"
+	},
+	"Metadata": {
+		"Currency": "USD",
+		"Locale": "en_US",
+		"Created On": "2023-08-13",
+		"Legal Disclaimer": "AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",
+		"Share Url": "https://calculator.aws/#/estimate?id=e690d9e4c3403a0c9686f59f0b38b0d023758e1c"
+	},
+	"Groups": {
+		"Services": [
+			{
+				"Service Name": "Amazon Aurora MySQL-Compatible",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "140.44",
+					"upfront": "0.00",
+					"12 months": "1685.28"
+				},
+				"Properties": {
+					"Aurora MySQL Cluster Configuration Option": "Aurora Standard",
+					"Change records per statement": "0.38",
+					"Instance Type": "db.t4g.large",
+					"Nodes": "1",
+					"Utilization": "100 %Utilized/Month",
+					"Instance Family": "General purpose",
+					"Pricing Model": "OnDemand",
+					"Storage amount": "100 GB"
+				}
+			},
+			{
+				"Service Name": "Amazon Route 53",
+				"Description": "DNS",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "54.80",
+					"upfront": "0.00",
+					"12 months": "657.60"
+				},
+				"Properties": {
+					"Hosted Zones": "1",
+					"IP (CIDR) blocks": "8",
+					"Basic Checks Within AWS": "10",
+					"Number of domains stored": "1"
+				}
+			},
+			{
+				"Service Name": "AWS Web Application Firewall (WAF)",
+				"Description": "WAF front-end",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "21.00",
+					"upfront": "0.00",
+					"12 months": "252.00"
+				},
+				"Properties": {
+					"Number of Web Access Control Lists (Web ACLs) utilized": "1 per month",
+					"Number of Rules added per Web ACL": "10 per month",
+					"Number of Rule Groups per Web ACL": "2 per month",
+					"Number of Rules inside each Rule Group": "2 per month"
+				}
+			},
+			{
+				"Service Name": "Application Load Balancer",
+				"Description": "LB Front-end",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "22.27",
+					"upfront": "0.00",
+					"12 months": "267.24"
+				},
+				"Properties": {
+					"Number of Application Load Balancers": "1"
+				}
+			},
+			{
+				"Service Name": "Network Load Balancer",
+				"Description": "LB API networtk ",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "38.33",
+					"upfront": "0.00",
+					"12 months": "459.96"
+				},
+				"Properties": {
+					"Number of Network Load Balancers": "1",
+					"Processed bytes per NLB for TCP": "5 GB per hour",
+					"Average number of new TCP connections": "20 per second",
+					"Average TCP connection duration": "60 seconds"
+				}
+			},
+			{
+				"Service Name": "Amazon EC2 ",
+				"Description": "Front End",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "74.21",
+					"upfront": "402.96",
+					"12 months": "1293.48"
+				},
+				"Properties": {
+					"Tenancy": "Shared Instances",
+					"Operating system": "Linux",
+					"Workload": "Consistent, Number of instances: 8",
+					"Advance EC2 instance": "t4g.small",
+					"Pricing strategy": "Compute Savings Plans 1 Year  Partial upfront",
+					"Enable monitoring": "enabled",
+					"EBS Storage amount": "20 GB",
+					"DT Inbound: Internet": "5 GB per month",
+					"DT Inbound: All other regions": "5 GB per month",
+					"DT Outbound: Not selected": "0 TB per month",
+					"DT Intra-Region:": "5 GB per month"
+				}
+			},
+			{
+				"Service Name": "Amazon Elastic IP",
+				"Description": "Front-End LB IP address",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.10",
+					"upfront": "0.00",
+					"12 months": "1.20"
+				},
+				"Properties": {
+					"Number of EC2 instances": "20",
+					"Number of EIPs per instance": "1"
+				}
+			},
+			{
+				"Service Name": "Amazon EC2 ",
+				"Description": "EC2 front end and API spots",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "198.19",
+					"upfront": "0.00",
+					"12 months": "2378.23"
+				},
+				"Properties": {
+					"Tenancy": "Shared Instances",
+					"Operating system": "Linux",
+					"Workload": "Consistent, Number of instances: 16",
+					"Advance EC2 instance": "t4g.small",
+					"Pricing strategy": "Spot Discount: -1",
+					"Enable monitoring": "disabled",
+					"DT Inbound: Not selected": "0 TB per month",
+					"DT Outbound: Not selected": "0 TB per month",
+					"DT Intra-Region:": "0 TB per month"
+				}
+			},
+			{
+				"Service Name": "AWS Lambda",
+				"Description": "backup lambdas",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "4.74",
+					"upfront": "0.00",
+					"12 months": "56.88"
+				},
+				"Properties": {
+					"Architecture": "x86",
+					"Invoke Mode": "Buffered",
+					"Amount of ephemeral storage allocated": "512 MB",
+					"Number of requests": "100 per day"
+				}
+			},
+			{
+				"Service Name": "S3 Standard",
+				"Description": "backup storage",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "3.83",
+					"upfront": "0.00",
+					"12 months": "45.96"
+				},
+				"Properties": {
+					"S3 Standard storage": "140 GB per month",
+					"GET, SELECT, and all other requests from S3 Standard": "111600",
+					"PUT, COPY, POST, LIST requests to S3 Standard": "111600",
+					"Data returned by S3 Select": "1 GB per month",
+					"Data scanned by S3 Select": "1 GB per month"
+				}
+			},
+			{
+				"Service Name": "Data Transfer",
+				"Description": "backup storage",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "61.44",
+					"upfront": "0.00",
+					"12 months": "737.28"
+				},
+				"Properties": {
+					"DT Inbound: All other regions": "5 GB per month",
+					"DT Outbound: All other regions": "3 TB per month"
+				}
+			},
+			{
+				"Service Name": "Amazon CloudWatch",
+				"Description": "Log everything",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "77.75",
+					"upfront": "0.00",
+					"12 months": "932.98"
+				},
+				"Properties": {
+					"Number of Metrics (includes detailed and custom metrics)": "30",
+					"GetMetricData: Number of metrics requested": "500",
+					"Number of other API requests": "500",
+					"GetMetricWidgetImage: Number of metrics requested": "500",
+					"Standard Logs: Data Ingested": "10 GB",
+					"Logs Delivered to CloudWatch Logs: Data Ingested": "10 GB",
+					"Logs Delivered to S3: Data Ingested": "10 GB",
+					"Expected Logs Data scanned": "10 GB",
+					"Number of Custom/Cross-account events": "1000",
+					"Number of Dashboards": "3",
+					"Number of Standard Resolution Alarm Metrics": "10",
+					"Number of High Resolution Alarm Metrics": "10",
+					"Number of composite alarms": "5",
+					"Number of Canary runs": "4",
+					"Number of Contributor Insights rules for CloudWatch": "3",
+					"Total number of matched log events for CloudWatch": "1 million matched log events per month",
+					"Number of Lambda functions": "16",
+					"Number of requests per function": "1 per minute",
+					"Monthly visitors to your web application": "1000000",
+					"Number of RUM events per visit": "10",
+					"Percentage of RUM event": "0.02",
+					"Number of monitored resources": "1 per hour"
+				}
+			},
+			{
+				"Service Name": "Standard topics",
+				"Description": "push notifications",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "9.00",
+					"upfront": "0.00",
+					"12 months": "108.00"
+				},
+				"Properties": {
+					"Requests": "1 million per month",
+					"HTTP/HTTPS Notifications": "124 per month",
+					"EMAIL/EMAIL-JSON Notifications": "100 per month",
+					"SQS Notifications": "100 million per month",
+					"The amount of outbound payload data scanned per month": "100 GB"
+				}
+			},
+			{
+				"Service Name": "Amazon CloudFront",
+				"Description": "cloudfront",
+				"Region": "US East (Ohio)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "1.53",
+					"upfront": "0.00",
+					"12 months": "18.36"
+				},
+				"Properties": {
+					"Data transfer out to internet": "5 GB per month",
+					"Data transfer out to origin": "5 GB per month",
+					"Number of requests (HTTPS)": "1000000 per month"
+				}
+			}
+		]
+	}
+}

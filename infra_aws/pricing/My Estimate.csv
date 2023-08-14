@@ -1,0 +1,27 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+402.96,707.63,8894.52,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (Ohio),,Amazon Aurora MySQL-Compatible,0,140.44,1685.28,USD,,"Aurora MySQL Cluster Configuration Option (Aurora Standard), Change records per statement (0.38), Instance Type (db.t4g.large), Nodes (1), Utilization (100 %Utilized/Month), Instance Family (General purpose), Pricing Model (OnDemand), Storage amount (100 GB)"
+My Estimate,US East (Ohio),DNS,Amazon Route 53,0,54.800000000000004,657.60,USD,,"Hosted Zones (1), IP (CIDR) blocks (8), Basic Checks Within AWS (10), Number of Elastic Network Interfaces (), Number of domains stored (1)"
+My Estimate,US East (Ohio),WAF front-end,AWS Web Application Firewall (WAF),0,21,252.00,USD,,"Number of Web Access Control Lists (Web ACLs) utilized (1 per month), Number of Rules added per Web ACL (10 per month), Number of Rule Groups per Web ACL (2 per month), Number of Rules inside each Rule Group (2 per month)"
+My Estimate,US East (Ohio),LB Front-end,Application Load Balancer,0,22.27,267.24,USD,,Number of Application Load Balancers (1)
+My Estimate,US East (Ohio),LB API networtk ,Network Load Balancer,0,38.33,459.96,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (5 GB per hour), Average number of new TCP connections (20 per second), Average TCP connection duration (60 seconds)"
+My Estimate,US East (Ohio),Front End,Amazon EC2 ,402.96,74.21,1293.48,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (t4g.small), Pricing strategy (Compute Savings Plans 1 Year  Partial upfront), Enable monitoring (enabled), EBS Storage amount (20 GB), DT Inbound: Internet (5 GB per month), DT Inbound: All other regions (5 GB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (5 GB per month)"
+My Estimate,US East (Ohio),Front-End LB IP address,Amazon Elastic IP,0,0.1,1.20,USD,,"Number of EC2 instances (20), Number of EIPs per instance (1), Number of EIP remaps ()"
+My Estimate,US East (Ohio),EC2 front end and API spots,Amazon EC2 ,0,198.18624,2378.23,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 16), Advance EC2 instance (t4g.small), Pricing strategy (Spot Discount: -1), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (Ohio),backup lambdas,AWS Lambda,0,4.74,56.88,USD,,"Architecture (x86), Architecture (x86), Invoke Mode (Buffered), Amount of ephemeral storage allocated (512 MB), Number of requests (100 per day)"
+My Estimate,US East (Ohio),backup storage,S3 Standard,0,3.83,45.96,USD,,"S3 Standard storage (140 GB per month), GET, SELECT, and all other requests from S3 Standard (111600), PUT, COPY, POST, LIST requests to S3 Standard (111600), Data returned by S3 Select (1 GB per month), Data scanned by S3 Select (1 GB per month)"
+My Estimate,US East (Ohio),backup storage,Data Transfer,0,61.44,737.28,USD,,"DT Inbound: All other regions (5 GB per month), DT Outbound: All other regions (3 TB per month)"
+My Estimate,US East (Ohio),Log everything,Amazon CloudWatch,0,77.748,932.98,USD,,"Number of Metrics (includes detailed and custom metrics) (30), GetMetricData: Number of metrics requested (500), Number of other API requests (500), GetMetricWidgetImage: Number of metrics requested (500), Standard Logs: Data Ingested (10 GB), Logs Delivered to CloudWatch Logs: Data Ingested (10 GB), Logs Delivered to S3: Data Ingested (10 GB), Expected Logs Data scanned (10 GB), Number of Custom/Cross-account events (1000), Number of Dashboards (3), Number of Standard Resolution Alarm Metrics (10), Number of High Resolution Alarm Metrics (10), Number of composite alarms (5), Number of Canary runs (4), Number of Contributor Insights rules for CloudWatch (3), Total number of matched log events for CloudWatch (1 million matched log events per month), Number of Lambda functions (16), Number of requests per function (1 per minute), Monthly visitors to your web application (1000000), Number of RUM events per visit (10), Percentage of RUM event (0.02), Number of monitored resources (1 per hour)"
+My Estimate,US East (Ohio),push notifications,Standard topics,0,9,108.00,USD,,"Requests (1 million per month), HTTP/HTTPS Notifications (124 per month), EMAIL/EMAIL-JSON Notifications (100 per month), SQS Notifications (100 million per month), The amount of outbound payload data scanned per month (100 GB)"
+My Estimate,US East (Ohio),cloudfront,Amazon CloudFront,0,1.53,18.36,USD,,"Data transfer out to internet (5 GB per month), Data transfer out to origin (5 GB per month), Number of requests (HTTPS) (1000000 per month)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
