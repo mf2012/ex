@@ -80,7 +80,7 @@ The fully fault tolerant requirement suggests only one solution for RDS (10) whi
 
 Alternative, would be to use cheaper RDS DB options and with extra maintenance cost of self-made replication solution between regions. 
 
-Both solution provide high-availability with Multi-AZ options per region and should be corroborated with business availability ofd the whole solution.
+Both solution provide high-availability with Multi-AZ options per region and should be corroborated with business availability of the whole solution.
 
 ### Auto-scaling
 We have scaling groups (7) of EC2 instances and based on the CPU utilization we would scale up to the required level. 
@@ -141,6 +141,7 @@ Any backups should also be replicated across the regions or multi-region S3 buck
 Please see the estimates in the [pricing folder](./pricing)
 or quote on [the AWS pricing calculator](https://calculator.aws/#/estimate?id=03015dbcbbfe0f970c46b6d0dcc28b49e849f354)
 
+<b>This is estimate for single region. Dual region solution will double this estimate plus we will need to add cost for data replication.</b>
 
 Assumption is that the auto-scaling groups are constructed of:
 - 2 pre-paid instances
