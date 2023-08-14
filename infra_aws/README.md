@@ -39,7 +39,7 @@ I assume here we have mili-second communication latency with the API-to-DB and F
 The first diagram shows the global infrastructure which would entail the fully fault tolerant and resilient architecture which would entail at least 2 regions.
 
 
-![Overview of the e-commerce platform in AWS](./picts/eavor_aws_global_ft.drawio.png)
+![Overview of the e-commerce platform in AWS](./picts/aws_global_ft.drawio.png)
 
 
 This effectively doubles the cost of the infrastructure plus adds extra complications related to the region data replication (if required).
@@ -51,7 +51,7 @@ Other data can be replicated to the desired location for analytics and other pur
 The second diagram shows the single region view with highly available and fault tolerant solution spanning across at least two availability zones in the region.
 
 
-![Detailed region architecture](./picts/eavor_aws_e_commerce_platform.drawio.png)
+![Detailed region architecture](./picts/aws_e_commerce_platform.drawio.png)
 
 
 
